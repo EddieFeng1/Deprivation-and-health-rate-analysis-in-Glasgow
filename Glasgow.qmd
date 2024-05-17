@@ -1,0 +1,77 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.30.3-'s-Hertogenbosch">
+  <identifier>SG_DataZone_Bdry_2011</identifier>
+  <parentidentifier></parentidentifier>
+  <language>ENGLISH</language>
+  <type>dataset</type>
+  <title>Data Zone Boundaries 2011</title>
+  <abstract>Data zones are the key geography for the dissemination of small area statistics in Scotland and are widely used across the public and private sector. Composed of aggregates of Census Output Areas, data zones are large enough that statistics can be presented accurately without fear of disclosure and yet small enough that they can be used to represent communities. They are designed to have roughly standard populations of 500 to 1,000 household residents, nest within Local Authorities, have compact shapes that respect physical boundaries where possible, and to contain households with similar social characteristics. Aggregations of data zones are often used to approximate a larger area of interest or a higher level geography that statistics wouldn’t normally be available for. Data zones also represent a relatively stable geography that can be used to analyse change over time, with changes only occurring after a Census. Following the update to data zones using 2011 Census data, there are now 6,976 data zones covering the whole of Scotland.
+
+</abstract>
+  <keywords vocabulary="Search keys">
+    <keyword>population distribution</keyword>
+    <keyword>statistical data</keyword>
+    <keyword>Statistical analysis</keyword>
+    <keyword>Statistical units</keyword>
+  </keywords>
+  <keywords vocabulary="gmd:topicCategory">
+    <keyword>population distribution</keyword>
+    <keyword>statistical data</keyword>
+    <keyword>Statistical analysis</keyword>
+    <keyword>Statistical units</keyword>
+  </keywords>
+  <contact>
+    <contactAddress>
+      <type></type>
+      <address>Victoria Quay</address>
+      <city>Edinburgh</city>
+      <administrativearea></administrativearea>
+      <postalcode>EH6 6QQ</postalcode>
+      <country>GB</country>
+    </contactAddress>
+    <name>GI-SAT</name>
+    <organization>Scottish Government</organization>
+    <position>Geographic Information Science and Analysis Team</position>
+    <voice></voice>
+    <fax></fax>
+    <email>GI-SAT@gov.scot</email>
+    <role></role>
+  </contact>
+  <links/>
+  <history>The Data Zone geography was first created in 2004 for use within the Scottish Neighbourhood Statistics (SNS) programme to allow statistics across a number of policy areas to be readily (and regularly) available for a consistent and stable geography. This original dataset (built from 2001 Census Output Areas) was created by St. Andrews University in 2004 on behalf of the Scottish Government – a detailed methodology can be found at http://www.scotland.gov.uk/library5/society/sndata-00.asp. Data zone boundaries are managed by the Scottish Government's Geographic Information Science and Analysis Team (GI-SAT), who carry out any required updates at the request of the Office of the Chief Statistician and Performance (OCSP). Following a consultation in 2010, it was decided that the 2001 Data Zone boundaries would be updated to reflect the results of the 2011 Census. The aim was to maintain the link with current Census data, to re-align to Local Authority boundaries, and to account for changes in population while keeping boundaries relatively comparable to those created for 2001. The criteria used in the definition of 2011 Data Zones were: • That they be built up from 2011 Census Output Areas; • Maintain approximately equal resident populations of 500 to 1,000 people, with an absolute minimum of 375 people and a maximum population of 1,125; • Be a continuous area without multiple extents, unless caused by water (e.g. data zones including islands); • Where possible, changes from 2001 occur within Intermediate Zone boundaries; • Maintain a compactness of shape. Initially, a first cut of boundaries was created by aggregating 2011 Census Output Areas to 2001 Data Zones, based on the location of the output area population weighted centroid. The resident population was summed for each 'best-fit' Data Zone to assess whether it fell within the required population thresholds. Data zones that had seen a dramatic decrease in population (e.g. as the result of housing demolition) and fell below the minimum population of 375 were merged with the neighbouring data zone with the longest shared boundary, maintaining the population criteria where possible. Conversely, those that had seen a dramatic increase in population to values greater than 1,125 (e.g. as the result of a new housing development) were split into one or more new data zones. Splitting of data zones was achieved by grouping output areas into ‘sub’ data zones that met the population requirements. Starting with the most south westerly point, Census Output Areas were appended on to create the first new data zone until the resident population reached 750 or more. At this point, the next new data zone would be started, with output areas appended on until the resident population again reached 750 or more. This process would continue until all output areas within the original data zone had been grouped into a set of ‘sub’ data zones that conformed to the population thresholds. This first step towards a draft set of 2011 data zones was automated using python script in ArcGIS. After the split and merge process was complete, quality assurance was undertaken to correct for any multi-extent data zones that had been created. This occurred where Census output areas had changed significantly from 2001 and resulted in some best-fit 2011 data zones being composed of two parts that do not touch. In these instances, the smaller non-contiguous part of the data zone (usually consisting of a single OA), was absorbed into a neighbouring data zone in compliance with population thresholds. Once the draft set of 2011 Data Zones was complete, they were put out to consultation with Local Authorities and other relevant stakeholders. Respondents were invited to propose changes to data zones (normally in the form of re-assigning output areas) as long as they complied with the criteria set above for the definition of 2011 data zones. Consultation responses resulted in a number of revisions being made to the draft set. Some councils required very few or no revisions, whereas others (e.g. Stirling) were completely re-configured. The finalised set of boundaries consists of 6,976 data zones. Each 2011 Data Zone has been given a new unique code, following the Scottish Government’s standard naming and coding convention. The Data Zone 2011 codes range from S01006506 to S01013481 (the previous 2001 codes ranged from S01000001 to S01006505). Most data zones have been named according to the Intermediate Zone in which they reside, following the format ‘Intermdiate Zone Name – 01’, ‘Intermediate Zone Name – 02’, etc. Some Councils chose to provide an individual name to each data zone (e.g. Fife). Census 2011 total, resident and household counts have been summed for each data zone and included in the attribute table. Standard area measurements in hectares and square kilometres have also been attached, calculated from Census Output Area totals. This follows the Office for National Statistics (ONS) Standard Area Measurement methodology, as agreed in 2005. This was done to ensure that total areas remained consistent when comparing geographies. For more information on ONS Standard Area Measurement, please see http://www.ons.gov.uk/ons/guide-method/geography/products/other/uk-standard-area-measurements--sam-/index.html.</history>
+  <dates>
+    <date type="Created" value="2014-11-06T00:00:00"/>
+    <date type="Published" value="2014-11-06T00:00:00"/>
+    <date type="Revised" value="2021-10-04T00:00:00"/>
+  </dates>
+  <fees></fees>
+  <encoding></encoding>
+  <crs>
+    <spatialrefsys nativeFormat="Wkt">
+      <wkt></wkt>
+      <proj4></proj4>
+      <srsid>0</srsid>
+      <srid>0</srid>
+      <authid></authid>
+      <description></description>
+      <projectionacronym></projectionacronym>
+      <ellipsoidacronym></ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </crs>
+  <extent>
+    <spatial dimensions="2" minx="-8.80000000000000071" miny="54.63000000000000256" maxx="-0.70999999999999996" maxy="60.86999999999999744" maxz="0" crs="EPSG:4326" minz="0"/>
+    <temporal>
+      <period>
+        <start>2014-11-06T00:00:00Z</start>
+        <end></end>
+      </period>
+    </temporal>
+    <temporal>
+      <period>
+        <start></start>
+        <end></end>
+      </period>
+    </temporal>
+  </extent>
+</qgis>
