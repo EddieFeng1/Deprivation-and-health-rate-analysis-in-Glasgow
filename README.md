@@ -16,12 +16,13 @@ And using box plot and scatter plot to check for the outliers and trends, which 
 ### Step 3. Spatical Regression Analysis
 Using spatical regression analysis to explore the spatial autocorrelation between good health rates and deprivation indices using spatial regression analysis.
 
-First of all, the strong and positive correlation, 0.83, between two variables proved the features can apply this model.
+First of all, the strong and positive correlation, 0.83, between two variables proved the features can apply Maximum Likelihood Estimation (MLE), whcih could **estimate the larameters of an assumed proability distribution, given observd data.**
 
 Then, The health rate was then used as the independent variable and the deprivation index as the dependent variable respectively in the model. Then use deprivation as the independent variable and health rate as the dependent variable, and apply the model again.
 
 ### Step 4. Check the results of models
 Using Mean Square Error (MSE) to check the predicted values wether accurate to judge the accurate of the model. The model exlpores how much good health rate affects deprivation index shows 2.42 MSE, which is too great for the original values. As the result, the model should be further discussed and developed. The model taht researches the effect on deprivation for health rate shows 0.00295 MSE, which fair enough to prove the accurate of the model.
+
 
 ### Step 5. Visulization
 Select the predicted values of the model which explores how much deprivation affects health rate. And map those data on the map of Glasgow.
